@@ -1,0 +1,181 @@
+.krug {
+    border: 2.5px solid green;
+    border-radius: 90%;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    display: flex;
+}
+
+.tochka {
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    border-radius: 90%;
+    margin-left: 147.4px;
+}
+
+.line-1 {
+    width: 120px;
+    border: 2.5px solid green;
+    margin-left: -6px;
+    animation: rotating 3600s ease-in-out infinite;
+} 
+
+.line-2 {
+    width: 90px;
+    border: 3px solid green;
+    margin-left: -215px;
+    animation: rotating-2 86400s infinite;
+}
+
+.line-3 {
+    width: 135px;
+    border: 1px solid green;
+    margin-left: -6px;
+    animation: rotating 60s infinite;
+}
+
+
+@keyframes rotating {
+    from {
+        transform-origin: 0 0;
+        transform: rotate(0deg);
+    }
+    to {
+        transform-origin: 0 0;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating-2 {
+    from {
+        transform-origin: 90px 0;
+        transform: rotate(0deg);
+    }
+    to {
+        transform-origin: 90px 0;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    margin-top: 300px;
+    display: flex;
+    width: 820px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 400px;
+    perspective: 800px;
+}
+
+.block {
+    height: 200px;
+    width: 400px;
+    background-color: rgb(80, 21, 51);
+    border: 5px solid rgb(56, 13, 35);
+}
+
+.H1 {
+    z-index: -1;
+    position: absolute;
+    padding-top: 64.76px;
+    box-sizing: border-box;
+}
+
+.container:hover > .right {
+    transform: rotateY(-60deg);
+    cursor: pointer;
+    transition: 2s;
+    opacity: 1;
+}
+
+.container:hover > .left {
+    transform: rotateY(60deg);
+    cursor: pointer;
+    transition: 2s;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+.container-1 {
+    display: flex; 
+    margin-top: 300px;
+    width: 800px;
+    height: 200px;
+}
+
+.block-1 {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(211, 204, 204);
+}
+
+.Hello {
+    margin: 0 auto;
+    margin-top: 81.2px;
+}
+
+.block-2 {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-1:hover > .left-1 {
+    transform: translateX(400px);
+    cursor: pointer;
+    transition: 2s;
+    background-color: rgb(78, 73, 73);
+}
+
+.container-1:hover > .right-1 {
+    transform: translateX(-400px);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    /* position: relative; */
+}
+
+/* .img:after {
+    background-color: rgb(78, 73, 73);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s;
+    z-index: 100;
+} */
+
+.img:hover /*:after*/ {
+    transform: scale(2); 
+    /* opacity: 1; */
+}
+
